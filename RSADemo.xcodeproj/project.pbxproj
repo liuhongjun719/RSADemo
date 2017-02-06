@@ -15,6 +15,10 @@
 		5F2411CB1E4874C800D6C887 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F2411C91E4874C800D6C887 /* LaunchScreen.storyboard */; };
 		5F2411D61E4874C900D6C887 /* RSADemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2411D51E4874C900D6C887 /* RSADemoTests.m */; };
 		5F2411E11E4874C900D6C887 /* RSADemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2411E01E4874C900D6C887 /* RSADemoUITests.m */; };
+		5F2411F01E4874DC00D6C887 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F2411EF1E4874DC00D6C887 /* Security.framework */; };
+		5F2411F31E48750100D6C887 /* RSAEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2411F21E48750100D6C887 /* RSAEncryptor.m */; };
+		5F2411F71E48922600D6C887 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F2411F61E48922600D6C887 /* UIKit.framework */; };
+		5F2411F91E48922B00D6C887 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F2411F81E48922B00D6C887 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,13 @@
 		5F2411DC1E4874C900D6C887 /* RSADemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSADemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F2411E01E4874C900D6C887 /* RSADemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSADemoUITests.m; sourceTree = "<group>"; };
 		5F2411E21E4874C900D6C887 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F2411EF1E4874DC00D6C887 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		5F2411F11E48750100D6C887 /* RSAEncryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSAEncryptor.h; sourceTree = "<group>"; };
+		5F2411F21E48750100D6C887 /* RSAEncryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSAEncryptor.m; sourceTree = "<group>"; };
+		5F2411F41E48784F00D6C887 /* private_key.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = private_key.p12; sourceTree = "<group>"; };
+		5F2411F51E48784F00D6C887 /* public_key.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = public_key.der; sourceTree = "<group>"; };
+		5F2411F61E48922600D6C887 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5F2411F81E48922B00D6C887 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +69,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F2411F91E48922B00D6C887 /* Foundation.framework in Frameworks */,
+				5F2411F71E48922600D6C887 /* UIKit.framework in Frameworks */,
+				5F2411F01E4874DC00D6C887 /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +99,7 @@
 				5F2411D41E4874C900D6C887 /* RSADemoTests */,
 				5F2411DF1E4874C900D6C887 /* RSADemoUITests */,
 				5F2411B91E4874C700D6C887 /* Products */,
+				5F2411EE1E4874DB00D6C887 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +116,14 @@
 		5F2411BA1E4874C700D6C887 /* RSADemo */ = {
 			isa = PBXGroup;
 			children = (
+				5F2411F41E48784F00D6C887 /* private_key.p12 */,
+				5F2411F51E48784F00D6C887 /* public_key.der */,
 				5F2411BE1E4874C700D6C887 /* AppDelegate.h */,
 				5F2411BF1E4874C800D6C887 /* AppDelegate.m */,
 				5F2411C11E4874C800D6C887 /* ViewController.h */,
 				5F2411C21E4874C800D6C887 /* ViewController.m */,
+				5F2411F11E48750100D6C887 /* RSAEncryptor.h */,
+				5F2411F21E48750100D6C887 /* RSAEncryptor.m */,
 				5F2411C41E4874C800D6C887 /* Main.storyboard */,
 				5F2411C71E4874C800D6C887 /* Assets.xcassets */,
 				5F2411C91E4874C800D6C887 /* LaunchScreen.storyboard */,
@@ -138,6 +157,16 @@
 				5F2411E21E4874C900D6C887 /* Info.plist */,
 			);
 			path = RSADemoUITests;
+			sourceTree = "<group>";
+		};
+		5F2411EE1E4874DB00D6C887 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F2411F81E48922B00D6C887 /* Foundation.framework */,
+				5F2411F61E48922600D6C887 /* UIKit.framework */,
+				5F2411EF1E4874DC00D6C887 /* Security.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F2411C31E4874C800D6C887 /* ViewController.m in Sources */,
+				5F2411F31E48750100D6C887 /* RSAEncryptor.m in Sources */,
 				5F2411C01E4874C800D6C887 /* AppDelegate.m in Sources */,
 				5F2411BD1E4874C700D6C887 /* main.m in Sources */,
 			);
@@ -427,6 +457,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VBG5T2XYZS;
 				INFOPLIST_FILE = RSADemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = HJ.RSADemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -439,6 +470,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VBG5T2XYZS;
 				INFOPLIST_FILE = RSADemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = HJ.RSADemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -514,6 +546,7 @@
 				5F2411E71E4874C900D6C887 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5F2411E81E4874C900D6C887 /* Build configuration list for PBXNativeTarget "RSADemoTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +555,7 @@
 				5F2411EA1E4874C900D6C887 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5F2411EB1E4874C900D6C887 /* Build configuration list for PBXNativeTarget "RSADemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +564,7 @@
 				5F2411ED1E4874C900D6C887 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

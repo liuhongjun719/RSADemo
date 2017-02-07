@@ -19,6 +19,8 @@
 		5F2411F31E48750100D6C887 /* RSAEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2411F21E48750100D6C887 /* RSAEncryptor.m */; };
 		5F2411F71E48922600D6C887 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F2411F61E48922600D6C887 /* UIKit.framework */; };
 		5F2411F91E48922B00D6C887 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F2411F81E48922B00D6C887 /* Foundation.framework */; };
+		8E7CAEDE1E4962D900A716CA /* public_key.der in Resources */ = {isa = PBXBuildFile; fileRef = 8E7CAEDC1E495D4A00A716CA /* public_key.der */; };
+		8E7CAEDF1E4962D900A716CA /* private_key.p12 in Resources */ = {isa = PBXBuildFile; fileRef = 8E7CAEDD1E495D4A00A716CA /* private_key.p12 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,10 +60,10 @@
 		5F2411EF1E4874DC00D6C887 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		5F2411F11E48750100D6C887 /* RSAEncryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSAEncryptor.h; sourceTree = "<group>"; };
 		5F2411F21E48750100D6C887 /* RSAEncryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSAEncryptor.m; sourceTree = "<group>"; };
-		5F2411F41E48784F00D6C887 /* private_key.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = private_key.p12; sourceTree = "<group>"; };
-		5F2411F51E48784F00D6C887 /* public_key.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = public_key.der; sourceTree = "<group>"; };
 		5F2411F61E48922600D6C887 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5F2411F81E48922B00D6C887 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8E7CAEDC1E495D4A00A716CA /* public_key.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = public_key.der; sourceTree = "<group>"; };
+		8E7CAEDD1E495D4A00A716CA /* private_key.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = private_key.p12; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,8 +118,8 @@
 		5F2411BA1E4874C700D6C887 /* RSADemo */ = {
 			isa = PBXGroup;
 			children = (
-				5F2411F41E48784F00D6C887 /* private_key.p12 */,
-				5F2411F51E48784F00D6C887 /* public_key.der */,
+				8E7CAEDC1E495D4A00A716CA /* public_key.der */,
+				8E7CAEDD1E495D4A00A716CA /* private_key.p12 */,
 				5F2411BE1E4874C700D6C887 /* AppDelegate.h */,
 				5F2411BF1E4874C800D6C887 /* AppDelegate.m */,
 				5F2411C11E4874C800D6C887 /* ViewController.h */,
@@ -278,6 +280,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E7CAEDE1E4962D900A716CA /* public_key.der in Resources */,
+				8E7CAEDF1E4962D900A716CA /* private_key.p12 in Resources */,
 				5F2411CB1E4874C800D6C887 /* LaunchScreen.storyboard in Resources */,
 				5F2411C81E4874C800D6C887 /* Assets.xcassets in Resources */,
 				5F2411C61E4874C800D6C887 /* Main.storyboard in Resources */,
